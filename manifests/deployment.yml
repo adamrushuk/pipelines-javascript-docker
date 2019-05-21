@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: adamrushukpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: adamrushukpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: adamrushukpipelinesjavascriptdocker 
+          image: adamrushukacr01.azurecr.io/adamrushukpipelinesjavascriptdocker 
+          ports:
+          - containerPort: 8080
